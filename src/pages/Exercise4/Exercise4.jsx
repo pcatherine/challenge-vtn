@@ -49,15 +49,98 @@ export default function Exercise4() {
         //     src={prototypeClimao}
         //     className={classes.PrototypeImage}
         // /> */}
-        <div className={classes.base}>
-            <div className={classes.header} >
-                <h1>CLIMÃO.COM</h1>
-                <input placeholder="Buscar Cidade" />
-            </div>
-            <div className={classes.clima}>CASA</div>
-            <div className={classes.blue}>CASA</div>
-            <div className={classes.orange}>CASA</div>
+        <>
+        <div style={{ display: "none"}}>
+            <DescriptionExercise instructions={instructions} />
         </div>
-        // </>
+        
+            <div className={classes.base}>
+                <div className={classes.header} >
+                    <h1>CLIMÃO.COM</h1>
+                    <input placeholder="Buscar Cidade" />
+                </div>
+                <div className={classes.clima}>CASA</div>
+
+                <div className={classes.blue}>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div50}>
+                        <span className={classes.fontBold}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                </div>
+
+                <div className={classes.orange}>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div50}>
+                        <span className={classes.fontBold}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                </div>
+
+                <div className={classes.green}>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div50}>
+                        <span className={classes.fontBold}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                </div>
+
+                <div className={classes.purple}>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div50}>
+                        <span className={classes.fontBold}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                </div>
+
+                <div className={classes.pink}>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div50}>
+                        <span className={classes.fontBold}>casa</span>
+                    </div>
+                    <div className={classes.separetor}></div>
+                    <div className={classes.div25}>
+                        <span className={classes.fontBold}>casa</span>
+                        <span className={classes.fontRegular}>casa</span>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
