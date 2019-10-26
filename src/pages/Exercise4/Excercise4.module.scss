@@ -1,6 +1,150 @@
 .PrototypeImage {
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.base {
+  top: 0px;
+  left: 0px;
+  width: 1366px;
+  height: 768px;
+  // background: rgba(35, 55, 64, 0.08) #233740  0% 0% no-repeat padding-box 0.08;
+  background: rgba(35, 55, 64, 0.08) 0% 0% no-repeat padding-box;
+  // opacity: 0.08;
+  z-index: -1;
+  position: absolute;
+  .header {
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 70px;
+    background: #2bcbba 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 1;
+
+    h1 {
+      top: 25px;
+      left: 141px;
+      width: 250px;
+      height: 26px;
+      text-align: left;
+      font: Bold Italic 20px/23px Arial;
+      letter-spacing: 0;
+      color: #ffffff;
+      opacity: 1;
+      position: absolute;
+    }
+
+    input {
+      top: 19px;
+      left: 991px;
+      width: 273px;
+      height: 32px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border-radius: 16px;
+      opacity: 1;
+      position: absolute;
+
+      ::placeholder {
+        top: 28px;
+        left: 1001px;
+        width: 137px;
+        height: 15px;
+        text-align: left;
+        font: Regular 12px/14px Arial;
+        letter-spacing: 0;
+        color: #778ca3;
+        opacity: 1;
+      }
+    }
+    // position: absolute;
+  }
+  .clima {
+    top: 128px;
+    left: 100px;
+    width: 669px;
+    height: 581px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 12px #0000000f;
+    border-radius: 4px;
+    opacity: 1;
+    position: absolute;
+    // float: left;
+  }
+
+  .blue {
+    top: 128px;
+    left: 793px;
+    width: 471px;
+    height: 97px;
+    background: transparent linear-gradient(90deg, #45aaf2 0%, #3867d6 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #0000000f;
+    border-radius: 4px;
+    opacity: 1;
+    position: absolute;
+    div {
+      top: 138px;
+      left: 812px;
+      width: 422px;
+      height: 78px;
+      opacity: 1;
+    }
+
+  }
+
+  .orange {
+    top: 249px;
+    left: 793px;
+    width: 471px;
+    height: 97px;
+    background: transparent linear-gradient(90deg, #fed330 0%, #fa8231 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #0000000f;
+    border-radius: 4px;
+    opacity: 1;
+    position: absolute;
+  }
+}
+
+.header 
+
+
+// .clima{
+//     top: 128px;
+//     left: 100px;
+//     width: 669px;
+//     height: 581px;
+//     background: #FFFFFF 0% 0% no-repeat padding-box;
+//     box-shadow: 0px 6px 12px #0000000F;
+//     border-radius: 4px;
+//     opacity: 1;
+//     // position: absolute;
+//     // float: left;
+// }
+
+.blue {
+  top: 128px;
+  left: 793px;
+  width: 471px;
+  height: 97px;
+  background: transparent linear-gradient(90deg, #45aaf2 0%, #3867d6 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 8px #0000000f;
+  border-radius: 4px;
+  opacity: 1;
+  position: absolute;
+
+  // float: right;
+}
+
+.orange {
+  top: 249px;
+  left: 793px;
+  width: 471px;
+  height: 97px;
+  background: transparent linear-gradient(90deg, #fed330 0%, #fa8231 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 8px #0000000f;
+  border-radius: 4px;
+  opacity: 1;
+  position: absolute;
 }

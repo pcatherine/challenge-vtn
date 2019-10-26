@@ -7,21 +7,28 @@ function FighterSelector() {
     const [fighter, setFighter] = useState("ken");
     const [fighterSelectionHistory, setFighterSelectionHistory] = useState([]);
 
-    const onFighterChange = fighter => {
+    const onFighterChange = (fighter) => {
         setFighter(fighter);
     }
+
+    // const bla = () => {
+    //     setFighterSelectionHistory([
+    //         ...fighterSelectionHistory,
+    //     ]);
+    // }
 
     useEffect(() => {
         setTimeout(() => {
             setFighterSelectionHistory([
                 ...fighterSelectionHistory,
                 {
-                    fighter,
+                    fighter: fighter,
                     time: (new Date()).toLocaleTimeString()
                 }
             ]);
-        }, 1000);
-    }, [fighter, fighterSelectionHistory])
+        }, 1000)
+
+    }, [fighter, fighterSelectionHistory ])
 
     return (
         <div className={styles.FighterSelector}>
@@ -35,7 +42,7 @@ function FighterSelector() {
                 <span>History:</span>
                 <div>
                     {fighterSelectionHistory.map(({ fighter, time }) => (
-                        <p key={fighter+time}>{`[${time}] ${fighter} was selected.`}</p>
+                        <p key={fighter + time}>{`[${time}] ${fighter} was selected.`}</p>
                     ))}
                 </div>
             </div>

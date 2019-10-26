@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./Excercise2.module.scss";
 import DescriptionExercise from "../DescriptionExercise";
 import TodoList from "./TodoList";
@@ -145,13 +145,13 @@ const initialTodos = [
 
 const getNextActivities = todos => {
     const findNext = category => todos.find(todo => todo.category === category);
-
     const nextTasks = allCategories.reduce((map, category) => {
         const _newMap = Object.assign({}, map);
         _newMap[category] = findNext(category).content;
+        // console.log(_newMap)
         return _newMap;
     }, {});
-
+    // console.log(nextTasks)
     return nextTasks;
 };
 
@@ -159,6 +159,13 @@ function App() {
     const [nextActivities, setNextActivities] = useState(
         getNextActivities(initialTodos)
     );
+
+    useEffect(() => {
+        setNextActivities(nextActivities);
+        // return () => {
+        //     cleanup
+        // };
+    }, [nextActivities]);
 
     function onChangeOrder(todos) {
         setNextActivities(getNextActivities(todos));
@@ -175,12 +182,13 @@ function App() {
                 <div className={classes.NextTasks}>
                     <h1>Próximas tarefas:</h1>
                     <ul>
-                        {Object.keys(nextActivities).map((category, index) => (
-                            <li key={index}>
-                                <strong>{category}</strong>:{" "}
-                                {nextActivities[category]}
-                            </li>
-                        ))}
+                        {
+                            Object.keys(nextActivities).map(category => (
+                                <li key={category}>
+                                    <strong>{category}</strong>:{" "}
+                                    {nextActivities[category]}
+                                </li>
+                            ))}
                     </ul>
                 </div>
             </div>

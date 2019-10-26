@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DescriptionExercise from "../DescriptionExercise";
-import prototypeClimao from "../../assets/prototypes/climao.png";
+// import prototypeClimao from "../../assets/prototypes/climao.png";
 import classes from "./Excercise4.module.scss";
 
 const prototypeUrl =
@@ -42,13 +42,22 @@ const instructions = [
 
 export default function Exercise4() {
     return (
-        <>
-            <DescriptionExercise instructions={instructions} />
-            <img
-                alt="Protótipo"
-                src={prototypeClimao}
-                className={classes.PrototypeImage}
-            />
-        </>
+        // <>
+        // {/* <DescriptionExercise instructions={instructions} /> */}
+        // {/* <img
+        //     alt="Protótipo"
+        //     src={prototypeClimao}
+        //     className={classes.PrototypeImage}
+        // /> */}
+        <div className={classes.base}>
+            <div className={classes.header} >
+                <h1>CLIMÃO.COM</h1>
+                <input placeholder="Buscar Cidade" />
+            </div>
+            <div className={classes.clima}>CASA</div>
+            <div className={classes.blue}>CASA</div>
+            <div className={classes.orange}>CASA</div>
+        </div>
+        // </>
     );
 }
