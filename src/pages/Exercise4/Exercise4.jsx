@@ -40,7 +40,34 @@ const instructions = [
     "Pesquisar e alterar cidade"
 ];
 
+// const = {
+//     // { "coord": { "lon": -0.13, "lat": 51.51 }, "weather": [{ "id": 500, "main": "Rain", "description": "light rain", "icon": "10n" }], "base": "stations", "main": { "temp": 280.48, "pressure": 1012, "humidity": 93, "temp_min": 279.15, "temp_max": 282.15 }, "visibility": 8000, "wind": { "speed": 3.1, "deg": 300 }, "rain": { }, "clouds": { "all": 75 }, "dt": 1572120062, "sys": { "type": 1, "id": 1414, "country": "GB", "sunrise": 1572072157, "sunset": 1572108370 }, "timezone": 3600, "id": 2643743, "name": "London", "cod": 200 }
+
+// }
+
 export default function Exercise4() {
+
+    // componentDidMount(){
+
+    // }
+
+    // handleInputChange = (event) => {
+    //     event.preventDefault();
+
+    //     const value = event.target.type === "checkbox" ? event.target.checked : event.target.value;
+    //     const name = event.target.id;
+
+    //     this.setState({
+    //       isEditing: true,
+    //       values: {
+    //         ...this.state.values,
+    //         [name]: value,
+    //       }
+    //     });
+    //   }
+
+
+
     return (
         // <>
         // {/* <DescriptionExercise instructions={instructions} /> */}
@@ -50,14 +77,14 @@ export default function Exercise4() {
         //     className={classes.PrototypeImage}
         // /> */}
         <>
-        <div style={{ display: "none"}}>
-            <DescriptionExercise instructions={instructions} />
-        </div>
-        
+            <div style={{ display: "none" }}>
+                <DescriptionExercise instructions={instructions} />
+            </div>
+
             <div className={classes.base}>
                 <div className={classes.header} >
                     <h1>CLIMÃO.COM</h1>
-                    <input placeholder="Buscar Cidade" />
+                    <input id="city" onChange={() => this.handleInputChange()} placeholder="Buscar Cidade" />
                 </div>
                 <div className={classes.clima}>CASA</div>
 
@@ -72,8 +99,8 @@ export default function Exercise4() {
                     </div>
                     <div className={classes.separetor}></div>
                     <div className={classes.div25}>
-                        <span className={classes.fontBold}>casa</span>
-                        <span className={classes.fontRegular}>casa</span>
+                        <span className={classes.fontBold2}>Min. 15</span>
+                        <span className={classes.fontBold2}>Max. 25</span>
                     </div>
                 </div>
 
@@ -88,8 +115,8 @@ export default function Exercise4() {
                     </div>
                     <div className={classes.separetor}></div>
                     <div className={classes.div25}>
-                        <span className={classes.fontBold}>casa</span>
-                        <span className={classes.fontRegular}>casa</span>
+                        <span className={classes.fontBold2}>Min. 15</span>
+                        <span className={classes.fontBold2}>Max. 25</span>
                     </div>
                 </div>
 
@@ -104,8 +131,8 @@ export default function Exercise4() {
                     </div>
                     <div className={classes.separetor}></div>
                     <div className={classes.div25}>
-                        <span className={classes.fontBold}>casa</span>
-                        <span className={classes.fontRegular}>casa</span>
+                        <span className={classes.fontBold2}>Min. 15</span>
+                        <span className={classes.fontBold2}>Max. 25</span>
                     </div>
                 </div>
 
@@ -120,8 +147,8 @@ export default function Exercise4() {
                     </div>
                     <div className={classes.separetor}></div>
                     <div className={classes.div25}>
-                        <span className={classes.fontBold}>casa</span>
-                        <span className={classes.fontRegular}>casa</span>
+                        <span className={classes.fontBold2}>Min. 15</span>
+                        <span className={classes.fontBold2}>Max. 25</span>
                     </div>
                 </div>
 
@@ -136,8 +163,8 @@ export default function Exercise4() {
                     </div>
                     <div className={classes.separetor}></div>
                     <div className={classes.div25}>
-                        <span className={classes.fontBold}>casa</span>
-                        <span className={classes.fontRegular}>casa</span>
+                        <span className={classes.fontBold2}>Min. 15</span>
+                        <span className={classes.fontBold2}>Max. 25</span>
                     </div>
                 </div>
             </div>

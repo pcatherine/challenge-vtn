@@ -85,7 +85,6 @@
     opacity: 1;
     position: absolute;
 
-    
     // text-align: left;
     // font: Regular 16px/18px Arial;
     // letter-spacing: 0;
@@ -165,20 +164,30 @@
     float: left;
   }
 
-  .fontRegular{
+  .fontRegular {
     text-align: left;
     font: Regular 16px/18px Arial;
     letter-spacing: 0;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
     display: block;
   }
 
-  .fontBold{
+  .fontBold {
     text-align: left;
     font: Bold 16px/18px Arial;
     letter-spacing: 0;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
+  }
+
+  .fontBold2 {
+    text-align: left;
+    font: Bold 12px/14px Arial;
+    letter-spacing: 0;
+    color: #ffffff;
+    opacity: 1;
+    display: block;
+    padding-top: 7px;
   }
 }
